@@ -5,3 +5,19 @@
 
 .manage__bring__image {
   width: 100%; }
+
+.manage__bring {
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 120px 200px; }
+
+.manage__bring__button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: calc(1rem * 2);
+  padding-right: calc(1rem * 2);
+  color: white;
+  background-color: #FF4500;
+  border: none;
+  border-radius: 30px; }
