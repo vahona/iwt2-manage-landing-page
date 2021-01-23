@@ -41,6 +41,17 @@
     
 }
 
+.manage__what__button {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    padding-left: calc(#{$padding-left} * 2);
+    padding-right: calc(#{$padding-right} * 2);
+    color: white;
+    background-color: #FF4500;
+    border: none;
+    border-radius: 30px
+}
+
 .manage__what__bigtitle {
     // text-align: center;
     // justify-content: center;

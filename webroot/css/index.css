@@ -89,3 +89,13 @@
   background-color: #d6d5d5;
   text-align: center;
   justify-content: center; }
+
+.manage__what__button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: calc(1rem * 2);
+  padding-right: calc(1rem * 2);
+  color: white;
+  background-color: #FF4500;
+  border: none;
+  border-radius: 30px; }
