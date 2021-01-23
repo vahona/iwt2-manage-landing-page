@@ -10,7 +10,9 @@
   background-image: url("../images/bg-tablet-pattern.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 120px 200px; }
+  background-position: 120px 200px;
+  text-align: center;
+  justify-content: center; }
 
 .manage__bring__button {
   padding-top: 1rem;
@@ -21,3 +23,38 @@
   background-color: #FF4500;
   border: none;
   border-radius: 30px; }
+
+.manage__differents__smcontainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF0EC;
+  border-radius: 10px; }
+
+.manage__differents__title {
+  padding-left: calc(1rem * 1.5);
+  border-radius: 10px;
+  flex-grow: 2;
+  margin: 0;
+  margin-top: 0.5rem; }
+
+.button__number {
+  height: 40px;
+  padding-top: calc(1rem /2);
+  padding-bottom: calc(1rem / 2);
+  padding-left: calc(1rem * 1.5);
+  padding-right: calc(1rem * 1.5);
+  color: white;
+  background-color: #FF4500;
+  border: none;
+  border-radius: 30px; }
+
+.manage__differents__navigation--list {
+  list-style: none;
+  margin-top: calc(1rem * 3); }
+
+.manage__differents__navigation--lists {
+  padding: 0; }
+
+.manage__different__head {
+  text-align: center;
+  justify-content: center; }
