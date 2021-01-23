@@ -58,3 +58,34 @@
 .manage__different__head {
   text-align: center;
   justify-content: center; }
+
+.manage__what {
+  width: 1400px; }
+
+.manage__what__subcontainer {
+  position: relative;
+  margin-right: calc(1rem * 3); }
+
+.manage__what__container {
+  display: flex;
+  justify-content: space-around; }
+
+.manage__what__smcontainer {
+  padding: 1rem;
+  margin-top: calc(1rem * 3); }
+
+.manage__what__image {
+  position: absolute;
+  top: -12%;
+  left: 25%; }
+
+.manage__what__title {
+  margin-top: 5rem; }
+
+.manage__what__container {
+  margin-top: calc(1rem * 6); }
+
+.manage__what__smcontainer {
+  background-color: #d6d5d5;
+  text-align: center;
+  justify-content: center; }

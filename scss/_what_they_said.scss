@@ -1,0 +1,47 @@
+
+.manage__what {
+  width: 1400px;
+}
+
+.manage__what__subcontainer {
+   position: relative;
+   margin-right: calc(#{$margin-right} * 3);
+}
+
+.manage__what__container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.manage__what__smcontainer {
+    padding: $padding;
+    margin-top: calc(#{$margin-top} * 3);
+}
+
+.manage__what__image {
+  position: absolute;
+  top: -12%;
+  left: 25%;
+ 
+}
+
+.manage__what__title {
+    margin-top: 5rem
+}
+
+.manage__what__container {
+    margin-top: calc(#{$margin-top} * 6);
+}
+
+.manage__what__smcontainer {
+    background-color: rgb(214, 213, 213);
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.manage__what__bigtitle {
+    // text-align: center;
+    // justify-content: center;
+}
