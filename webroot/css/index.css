@@ -24,6 +24,109 @@
   border: none;
   border-radius: 30px; }
 
+.footer__simplify {
+  background-color: #FF4500;
+  color: white;
+  padding: calc(1rem * 2);
+  margin-top: calc(1rem / 0.5);
+  justify-content: space-between; }
+
+.footer__simplify__button {
+  background-color: white;
+  color: #FF4500;
+  border: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: calc(1rem * 2);
+  padding-right: calc(1rem * 2);
+  border-radius: 30px; }
+
+.footer__updates {
+  background-color: black;
+  color: white; }
+
+.footer__updates__inbox {
+  background-color: white;
+  color: #FF4500;
+  border: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: calc(1rem * 2);
+  padding-right: calc(1rem * 2);
+  border-radius: 30px;
+  margin-top: 1rem; }
+
+.footer__updates__go {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: calc(1rem * 2);
+  padding-right: calc(1rem * 2);
+  border-radius: 30px;
+  margin-top: 1rem; }
+
+.footer__updates__inbox {
+  margin-inline-start: 1rem; }
+
+.footer__updates__indice {
+  padding: calc(1rem * 1.5); }
+
+.footer__updates__navigation2--anchore {
+  margin: calc(1rem / 2); }
+
+.footer__updates__navigation--list {
+  list-style: none; }
+
+.footer__updates__navigation--lists {
+  margin-top: 1rem; }
+
+.footer__updates__navigation--anchore {
+  text-decoration: none;
+  color: #d3d0d0; }
+
+.footer__updates__navigation2--list {
+  list-style: none;
+  display: flex; }
+
+.footer__updates__navigation--list {
+  columns: 2;
+  padding: calc(1rem * 2); }
+
+.footer__updates__navigation2--anchore {
+  text-indent: -9999px;
+  display: inline-block; }
+
+.youtube {
+  background-image: url("../images/icon-youtube.svg");
+  background-repeat: no-repeat;
+  padding: 1rem; }
+
+.facebook {
+  background-image: url("../images/icon-facebook.svg");
+  background-repeat: no-repeat;
+  padding: 1rem; }
+
+.twitter {
+  background-image: url("../images/icon-twitter.svg");
+  background-repeat: no-repeat;
+  padding: 1rem; }
+
+.pinterest {
+  background-image: url("../images/icon-pinterest.svg");
+  background-repeat: no-repeat;
+  padding: 1rem; }
+
+.instagram {
+  background-image: url("../images/icon-instagram.svg");
+  background-repeat: no-repeat;
+  padding: 1rem; }
+
+@media (min-width: 600px) {
+  .footer__simplify {
+    display: flex; } }
+
 .manage__differents__smcontainer {
   display: flex;
   flex-direction: row;
