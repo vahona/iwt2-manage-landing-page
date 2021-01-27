@@ -4,10 +4,40 @@
     background-image: url('../images/bg-tablet-pattern.svg');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: 100px -56px;
+
+
+    
+}
+
+.masthead {
+  position: relative;
+    
+  &__navigation__list {
+      list-style: $list-style
+  }
+
+  &__navigation__lists--anchore {
+      text-decoration: $text-decoration;
+  }
 }
 
 .manage__bring__image {
     width: 100%;
+}
+
+.bar {
+    position: absolute;
+    top:$top;
+    right: $right;
+    
+}
+
+.check {
+    zoom: 2;
+    top: calc(#{$top} / 10);
+    position: absolute;
+    right: calc(#{$right} / 3);
 }
 
 .manage__bring {
