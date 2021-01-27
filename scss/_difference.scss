@@ -45,7 +45,17 @@
 }
 
 
-// @media (min-width: 800px) {
+@media (min-width: 800px) {
+  .manage__different {
+      display: flex;
+      margin-top: calc(#{$margin-top} * 4);
+    
+  }
 
-// }
+  .manage__different__head {
+       margin-top: calc(#{$margin-top} * 2.5);
+      text-align: start;
+      justify-content: start;
+  }
+}
 

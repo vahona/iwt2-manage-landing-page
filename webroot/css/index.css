@@ -281,6 +281,15 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   text-align: center;
   justify-content: center; }
 
+@media (min-width: 800px) {
+  .manage__different {
+    display: flex;
+    margin-top: calc(1rem * 4); }
+  .manage__different__head {
+    margin-top: calc(1rem * 2.5);
+    text-align: start;
+    justify-content: start; } }
+
 .manage__what {
   width: 1400px; }
 
