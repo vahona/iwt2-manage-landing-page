@@ -6,8 +6,6 @@
     background-repeat: no-repeat;
     background-position: 100px -56px;
 
-
-    
 }
 
 .masthead {
@@ -38,6 +36,7 @@
     top: calc(#{$top} / 10);
     position: absolute;
     right: calc(#{$right} / 3);
+    opacity: 0;
 }
 
 .manage__bring {
@@ -62,4 +61,53 @@
 
 .manage__what__containerbutton {
    
+}
+
+
+.masthead__navigation {
+    background-color: white;
+    width: 250px;
+    position: fixed;
+    left: -200px;
+    padding: calc(#{$padding} * 2);
+    
+}
+
+
+.masthead__navigation__lists {
+    margin: calc(#{$margin} * 2);
+}
+
+
+input[type=checkbox]:checked + .masthead__navigation {
+   transform: translateX(50%);
+   transition: all 0.5s ease;
+   margin-inline-start:  calc(#{$margin-inline-start} * 2);
+   margin-inline-end:  calc(#{$margin-inline-end} * 2);
+}
+
+input[type=checkbox]:not(:checked) + .masthead__navigation {
+    transform: translateX(-150px);
+    transition: all 0.5s ease-out;
+    left: -300px;
+    margin-inline-start: $margin-inline-start;
+}
+
+.masthead__button {
+    display: none;
+}
+
+
+@media (min-width: 800px) {
+    .bar {
+        display: none;
+    }
+
+    .check {
+        display: none;
+    }
+
+    .masthead__button {
+        display: block;
+    }
 }

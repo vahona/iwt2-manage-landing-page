@@ -31,7 +31,8 @@ body {
   zoom: 2;
   top: calc(1rem / 10);
   position: absolute;
-  right: calc(1rem / 3); }
+  right: calc(1rem / 3);
+  opacity: 0; }
 
 .manage__bring {
   background-image: url("../images/bg-tablet-pattern.svg");
@@ -50,6 +51,39 @@ body {
   background-color: #FF4500;
   border: none;
   border-radius: 30px; }
+
+.masthead__navigation {
+  background-color: white;
+  width: 250px;
+  position: fixed;
+  left: -200px;
+  padding: calc(1rem * 2); }
+
+.masthead__navigation__lists {
+  margin: calc(1rem * 2); }
+
+input[type=checkbox]:checked + .masthead__navigation {
+  transform: translateX(50%);
+  transition: all 0.5s ease;
+  margin-inline-start: calc(1rem * 2);
+  margin-inline-end: calc(1rem * 2); }
+
+input[type=checkbox]:not(:checked) + .masthead__navigation {
+  transform: translateX(-150px);
+  transition: all 0.5s ease-out;
+  left: -300px;
+  margin-inline-start: 1rem; }
+
+.masthead__button {
+  display: none; }
+
+@media (min-width: 800px) {
+  .bar {
+    display: none; }
+  .check {
+    display: none; }
+  .masthead__button {
+    display: block; } }
 
 .footer__simplify {
   background-color: #FF4500;
