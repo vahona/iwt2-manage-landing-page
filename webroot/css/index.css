@@ -83,7 +83,18 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   .check {
     display: none; }
   .masthead__button {
-    display: block; } }
+    display: block; }
+  .masthead__navigation {
+    background-color: transparent; }
+  .masthead__navigation__list {
+    display: flex;
+    color: black; }
+  input[type=checkbox]:not(:checked) + .masthead__navigation {
+    transform: translateX(0);
+    transition: none;
+    left: 0;
+    margin-inline-start: 1rem;
+    top: calc(1rem * -3); } }
 
 .footer__simplify {
   background-color: #FF4500;
