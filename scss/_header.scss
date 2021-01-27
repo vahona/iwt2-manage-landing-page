@@ -36,6 +36,10 @@
     
 }
 
+.manage__bring__subtitle {
+      font-size: 32px;
+  }
+
 .check {
     zoom: 2;
     top: calc(#{$top} / 2);
@@ -171,5 +175,40 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
 
   .manage__bring__image {
     margin-top: 0;
-}
+  }
+
+  .manage__bring__imageconatiner {
+      width: 50%;
+      margin-inline-start: auto;
+  }
+
+  .manage__bring__conatiner {
+      width: 50%;
+      margin-inline-end: auto;
+      
+  }
+
+
+//   .manage__bring__subtitle,
+//   .manage__bring__paragraph,
+//   .manage__bring__button {
+//       justify-content: start;
+//       text-align: start;
+//       margin-inline-start: calc(#{$margin-inline-start} * 2);
+//   }
+
+
+  .manage__bring__conatiner {
+        justify-content: start;
+        text-align: start;
+        margin-inline-start: calc(#{$margin-inline-start} * 2);
+        position: absolute;
+        top: calc(#{$top} * 14);
+        width: 40%;
+    
+  }
+
+  .manage__bring__subtitle {
+      font-size: 32px;
+  }
 }

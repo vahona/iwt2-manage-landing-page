@@ -30,6 +30,9 @@ body {
   top: calc(1rem * 2);
   right: 1rem; }
 
+.manage__bring__subtitle {
+  font-size: 32px; }
+
 .check {
   zoom: 2;
   top: calc(1rem / 2);
@@ -123,7 +126,22 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   .masthead {
     display: flex; }
   .manage__bring__image {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .manage__bring__imageconatiner {
+    width: 50%;
+    margin-inline-start: auto; }
+  .manage__bring__conatiner {
+    width: 50%;
+    margin-inline-end: auto; }
+  .manage__bring__conatiner {
+    justify-content: start;
+    text-align: start;
+    margin-inline-start: calc(1rem * 2);
+    position: absolute;
+    top: calc(1rem * 14);
+    width: 40%; }
+  .manage__bring__subtitle {
+    font-size: 32px; } }
 
 .footer__simplify {
   background-color: #FF4500;
