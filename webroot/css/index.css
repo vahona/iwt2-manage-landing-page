@@ -18,18 +18,21 @@ body {
     list-style: none; }
   .masthead__navigation__lists--anchore {
     text-decoration: none; }
+  .masthead__logo {
+    margin-top: calc(1rem * 2);
+    margin-inline-start: calc(1rem * 2); }
 
 .manage__bring__image {
   width: 100%; }
 
 .bar {
   position: absolute;
-  top: 1rem;
+  top: calc(1rem * 2);
   right: 1rem; }
 
 .check {
   zoom: 2;
-  top: calc(1rem / 10);
+  top: calc(1rem / 2);
   position: absolute;
   right: calc(1rem / 3);
   opacity: 0; }
@@ -52,12 +55,25 @@ body {
   border: none;
   border-radius: 30px; }
 
+.masthead__button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: calc(1rem * 2);
+  padding-right: calc(1rem * 2);
+  color: white;
+  background-color: #FF4500;
+  border: none;
+  border-radius: 30px; }
+
+.masthead__button {
+  display: none; }
+
 .masthead__navigation {
   background-color: white;
   width: 250px;
-  position: fixed;
   left: -200px;
-  padding: calc(1rem * 2); }
+  padding: calc(1rem * 2);
+  position: relative; }
 
 .masthead__navigation__lists {
   margin: calc(1rem * 2); }
@@ -69,13 +85,16 @@ input[type=checkbox]:checked + .masthead__navigation {
   margin-inline-end: calc(1rem * 2); }
 
 input[type=checkbox]:not(:checked) + .masthead__navigation {
-  transform: translateX(-150px);
+  transform: translateX(-100%);
   transition: all 0.5s ease-out;
   left: -300px;
   margin-inline-start: 1rem; }
 
 .masthead__button {
   display: none; }
+
+.manage__bring__image {
+  margin-top: calc(1rem * -23); }
 
 @media (min-width: 800px) {
   .bar {
@@ -85,7 +104,9 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   .masthead__button {
     display: block; }
   .masthead__navigation {
-    background-color: transparent; }
+    background-color: transparent;
+    margin-top: calc(1rem * 1);
+    color: black; }
   .masthead__navigation__list {
     display: flex;
     color: black; }
@@ -93,8 +114,16 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
     transform: translateX(0);
     transition: none;
     left: 0;
-    margin-inline-start: 1rem;
-    top: calc(1rem * -3); } }
+    top: calc(1rem * -3); }
+  .masthead__button {
+    display: block;
+    position: absolute;
+    right: calc(1rem * 3);
+    top: calc(1rem * 2); }
+  .masthead {
+    display: flex; }
+  .manage__bring__image {
+    margin-top: 0; } }
 
 .footer__simplify {
   background-color: #FF4500;

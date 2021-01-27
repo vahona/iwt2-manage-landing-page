@@ -18,6 +18,11 @@
   &__navigation__lists--anchore {
       text-decoration: $text-decoration;
   }
+
+  &__logo{
+      margin-top: calc(#{$margin-top} * 2);
+      margin-inline-start: calc(#{$margin-inline-start} * 2);
+  }
 }
 
 .manage__bring__image {
@@ -26,14 +31,14 @@
 
 .bar {
     position: absolute;
-    top:$top;
+    top:calc(#{$top} * 2);
     right: $right;
     
 }
 
 .check {
     zoom: 2;
-    top: calc(#{$top} / 10);
+    top: calc(#{$top} / 2);
     position: absolute;
     right: calc(#{$right} / 3);
     opacity: 0;
@@ -63,13 +68,28 @@
    
 }
 
+.masthead__button {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    padding-left: calc(#{$padding-left} * 2);
+    padding-right: calc(#{$padding-right} * 2);
+    color: white;
+    background-color: #FF4500;
+    border: none;
+    border-radius: 30px;
+}
+
+.masthead__button {
+    display: none;
+}
+
 
 .masthead__navigation {
     background-color: white;
     width: 250px;
-    position: fixed;
     left: -200px;
     padding: calc(#{$padding} * 2);
+    position: relative;
     
 }
 
@@ -87,7 +107,7 @@ input[type=checkbox]:checked + .masthead__navigation {
 }
 
 input[type=checkbox]:not(:checked) + .masthead__navigation {
-    transform: translateX(-150px);
+    transform: translateX(-100%);
     transition: all 0.5s ease-out;
     left: -300px;
     margin-inline-start: $margin-inline-start;
@@ -95,6 +115,10 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
 
 .masthead__button {
     display: none;
+}
+
+.manage__bring__image {
+    margin-top: calc(#{$margin-top} * -23);
 }
 
 
@@ -113,6 +137,8 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
 
     .masthead__navigation {
         background-color: transparent;
+        margin-top: calc(#{$margin-top} * 1);
+        color: black;
         
         
     }
@@ -127,7 +153,23 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
         transform: translateX(0);
         transition: none;
         left: 0;
-        margin-inline-start: $margin-inline-start;
+        // margin-inline-start: 5%;
         top: calc(#{$top} * -3)
+    }
+
+
+    .masthead__button {
+      display: block;
+      position: absolute;
+      right: calc(#{$right} * 3);
+      top: calc(#{$top} * 2)
+  }
+
+  .masthead {
+      display: flex;
+  }
+
+  .manage__bring__image {
+    margin-top: 0;
 }
 }
