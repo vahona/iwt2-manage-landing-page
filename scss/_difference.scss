@@ -44,6 +44,11 @@
     justify-content: center;
 }
 
+.manage__differents {
+      margin-inline-start: calc(#{$margin-inline-start} * 2);
+      margin-inline-end: $margin-inline-end;
+  }
+
 
 @media (min-width: 800px) {
   .manage__different {
@@ -54,8 +59,14 @@
 
   .manage__different__head {
        margin-top: calc(#{$margin-top} * 2.5);
-      text-align: start;
-      justify-content: start;
+       text-align: start;
+       justify-content: start;
+       margin-inline-start: $margin-inline-start;
+       margin-inline-end: $margin-inline-end;
+  }
+
+  .manage__differents {
+      margin-inline-end: calc(#{$margin-inline-end} * 2);
   }
 }
 
