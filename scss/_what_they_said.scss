@@ -1,11 +1,14 @@
 
-.manage__what {
-  width: 1400px;
-}
 
 .manage__what__subcontainer {
    position: relative;
    margin-right: calc(#{$margin-right} * 3);
+   
+
+}
+
+.container__slide {
+    overflow: hidden;
 }
 
 .manage__what__container {
@@ -14,10 +17,7 @@
     
 }
 
-.manage__what__smcontainer {
-    padding: $padding;
-    margin-top: calc(#{$margin-top} * 3);
-}
+
 
 .manage__what__image {
   position: absolute;
@@ -34,11 +34,16 @@
     margin-top: calc(#{$margin-top} * 6);
 }
 
+
+
 .manage__what__smcontainer {
     background-color: rgb(214, 213, 213);
     text-align: center;
     justify-content: center;
-    
+    padding: $padding;
+    margin-top: calc(#{$margin-top} * 3);
+    margin-bottom: calc(#{$margin-bottom} * 3);
+   width: 340px;
 }
 
 .manage__what__button {
@@ -62,8 +67,11 @@
 
 .manage__slider__container {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     // margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .manage__menu {
@@ -72,10 +80,12 @@
     z-index: 900;
     width: 100%;
     bottom: 0;
+    margin-inline-start: 50%;
 }
 
 .container__slide {
     display: flex;
+    
 }
 
 .slide-dot {
@@ -114,3 +124,4 @@
   background-position: 50% 50%;
   transition: left 0s .75s;
 }
+
