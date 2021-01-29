@@ -51,9 +51,9 @@
 
 .check {
     zoom: 4;
-    top: calc(#{$top} / 2);
+    top: calc(#{$top} / 5);
     position: absolute;
-    right: calc(#{$right} / 3);
+    right: calc(#{$right} / 5);
     opacity: 0;
 }
 
@@ -113,13 +113,10 @@
 }
 
 
-input[type=checkbox]:checked + .image__open {
-    display: none;
-}
+input[type=checkbox] ~ .image__open { display: none; }
+input[type=checkbox]:checked ~ .image__close { display: none; }
 
-input[type=checkbox]:checked + .image__close {
-   display: none;
-}
+
 
 
 .masthead__navigation__lists {
@@ -141,6 +138,22 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
     margin-inline-start: $margin-inline-start;
 }
 
+
+input[type=checkbox]:checked ~ .curtain {
+    .curtain {
+	background-color: rgba(145, 148, 144, 0.5);
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+    right: 0;
+    
+    }
+
+}
+
 .masthead__button {
     display: none;
 }
@@ -150,19 +163,7 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
 }
 
 
-.curtain {
-	background-color: rgba(145, 148, 144, 0.5);
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	display: none;
-	
-	
-}
+
 
 
 @media (min-width: 800px) {

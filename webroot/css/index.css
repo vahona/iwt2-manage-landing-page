@@ -41,9 +41,9 @@ body {
 
 .check {
   zoom: 4;
-  top: calc(1rem / 2);
+  top: calc(1rem / 5);
   position: absolute;
-  right: calc(1rem / 3);
+  right: calc(1rem / 5);
   opacity: 0; }
 
 .manage__bring {
@@ -88,10 +88,10 @@ body {
   background-color: transparent;
   border: none; }
 
-input[type=checkbox]:checked + .image__open {
+input[type=checkbox] ~ .image__open {
   display: none; }
 
-input[type=checkbox]:checked + .image__close {
+input[type=checkbox]:checked ~ .image__close {
   display: none; }
 
 .masthead__navigation__lists {
@@ -109,13 +109,7 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   left: -300px;
   margin-inline-start: 1rem; }
 
-.masthead__button {
-  display: none; }
-
-.manage__bring__image {
-  margin-top: calc(1rem * -23); }
-
-.curtain {
+input[type=checkbox]:checked ~ .curtain .curtain {
   background-color: rgba(145, 148, 144, 0.5);
   z-index: 1;
   width: 100%;
@@ -123,8 +117,13 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; }
+
+.masthead__button {
   display: none; }
+
+.manage__bring__image {
+  margin-top: calc(1rem * -23); }
 
 @media (min-width: 800px) {
   .bar {
@@ -365,3 +364,46 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   background-color: #FF4500;
   border: none;
   border-radius: 30px; }
+
+.manage__what__containerbutton {
+  margin-top: 2rem; }
+
+.manage__slider__container {
+  position: relative;
+  overflow: hidden; }
+
+.manage__menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0; }
+
+.container__slide {
+  display: flex; }
+
+.slide-dot {
+  border: gray solid 2px; }
+
+.manage__menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+  border-radius: 50px; }
+  .manage__menu label:hover {
+    background-color: orange; }
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out; }
+
+.slide {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s; }
