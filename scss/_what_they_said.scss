@@ -4,6 +4,7 @@
    position: relative;
    margin-right: calc(#{$margin-right} * 1);
    
+   
 
 }
 
@@ -102,7 +103,7 @@
 
 
 [id^="slide"]:checked + .slide {
-  left: 0;
+  left: -1000px;
   z-index: 100;
   transition: right .65s ease-out;
 }

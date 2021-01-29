@@ -394,7 +394,7 @@ input[type=checkbox]:checked ~ .curtain .curtain {
   border: gray solid 2px; }
 
 [id^="slide"]:checked + .slide {
-  left: 0;
+  left: -1000px;
   z-index: 100;
   transition: right .65s ease-out; }
 
