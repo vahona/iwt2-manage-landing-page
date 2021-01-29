@@ -326,14 +326,16 @@ input[type=checkbox]:checked ~ .curtain .curtain {
 
 .manage__what__subcontainer {
   position: relative;
-  margin-right: calc(1rem * 3); }
+  margin-right: calc(1rem * 1); }
 
 .container__slide {
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex; }
 
 .manage__what__container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: calc(1rem * 6); }
 
 .manage__what__image {
   position: absolute;
@@ -342,9 +344,6 @@ input[type=checkbox]:checked ~ .curtain .curtain {
 
 .manage__what__title {
   margin-top: 5rem; }
-
-.manage__what__container {
-  margin-top: calc(1rem * 6); }
 
 .manage__what__smcontainer {
   background-color: #d6d5d5;
@@ -379,13 +378,7 @@ input[type=checkbox]:checked ~ .curtain .curtain {
   z-index: 900;
   width: 100%;
   bottom: 0;
-  margin-inline-start: 50%; }
-
-.container__slide {
-  display: flex; }
-
-.slide-dot {
-  border: gray solid 2px; }
+  text-align: center; }
 
 .manage__menu label {
   cursor: pointer;
@@ -397,10 +390,13 @@ input[type=checkbox]:checked ~ .curtain .curtain {
   .manage__menu label:hover {
     background-color: orange; }
 
+.slide-dot {
+  border: gray solid 2px; }
+
 [id^="slide"]:checked + .slide {
   left: 0;
   z-index: 100;
-  transition: left .65s ease-out; }
+  transition: right .65s ease-out; }
 
 .slide {
   width: 100%;
@@ -409,3 +405,6 @@ input[type=checkbox]:checked ~ .curtain .curtain {
   background-size: cover;
   background-position: 50% 50%;
   transition: left 0s .75s; }
+
+.manage__what__paragraph {
+  padding: 2rem; }
