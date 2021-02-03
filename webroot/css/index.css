@@ -185,7 +185,9 @@ input[type=checkbox]:checked ~ .curtain .curtain {
   color: white;
   padding: calc(1rem * 2);
   margin-top: calc(1rem / 0.5);
-  justify-content: space-between; }
+  justify-content: space-between;
+  text-align: center;
+  justify-content: center; }
 
 .footer__simplify__button {
   background-color: white;
@@ -281,7 +283,10 @@ input[type=checkbox]:checked ~ .curtain .curtain {
 
 @media (min-width: 600px) {
   .footer__simplify {
-    display: flex; } }
+    display: flex;
+    text-align: start;
+    justify-content: start;
+    justify-content: space-between; } }
 
 .manage__differents__smcontainer {
   display: flex;

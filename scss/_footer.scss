@@ -4,6 +4,8 @@
     padding: calc(#{$padding} * 2);
     margin-top: calc(#{$margin-top} / 0.5);
     justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     
 }
 
@@ -122,5 +124,11 @@
 @media (min-width: 600px) {
     .footer__simplify  {
          display: flex;
+         text-align: start;
+         justify-content: start;
+         justify-content: space-between;
     }
+
+
+
 }
