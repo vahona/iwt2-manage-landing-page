@@ -18,6 +18,8 @@ body {
     position: relative; }
   .masthead__navigation__list {
     list-style: none; }
+  .masthead__navigation__lists--anchore:hover {
+    color: #b6aeae; }
   .masthead__navigation__lists--anchore {
     text-decoration: none; }
   .masthead__logo {
@@ -63,6 +65,11 @@ body {
   background-color: #FF4500;
   border: none;
   border-radius: 30px; }
+
+.manage__bring__button:hover,
+.masthead__button:hover {
+  box-shadow: 2px 10px 0px #f78d6744;
+  opacity: 0.5; }
 
 .masthead__button {
   padding-top: 1rem;
@@ -370,6 +377,10 @@ input[type=checkbox]:checked ~ .curtain .curtain {
   background-color: #FF4500;
   border: none;
   border-radius: 30px; }
+
+.manage__what__button:hover {
+  box-shadow: 2px 10px 0px #f78d6744;
+  opacity: 0.5; }
 
 .manage__what__containerbutton {
   margin-top: 2rem; }

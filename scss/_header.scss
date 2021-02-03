@@ -19,6 +19,10 @@
       list-style: $list-style
   }
 
+  &__navigation__lists--anchore:hover {
+      color: rgb(182, 174, 174);
+  }
+
   &__navigation__lists--anchore {
       text-decoration: $text-decoration;
   }
@@ -75,6 +79,13 @@
     background-color: #FF4500;
     border: none;
     border-radius: 30px;
+}
+
+
+.manage__bring__button:hover,
+.masthead__button:hover {
+    box-shadow:  2px 10px 0px #f78d6744;
+    opacity: 0.5;
 }
 
 .manage__what__containerbutton {
