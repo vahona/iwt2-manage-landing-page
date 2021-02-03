@@ -4,7 +4,7 @@
     background-image: url('../images/bg-tablet-pattern.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 100px -56px;
+    background-position: 100% -30%;
 
 }
 
@@ -63,7 +63,7 @@
 
 .manage__bring {
     background-image: url('../images/bg-tablet-pattern.svg');
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: 120px 200px;
     text-align: center;
@@ -194,13 +194,14 @@ input[type=checkbox]:checked ~ .curtain {
         background-color: transparent;
         margin-top: calc(#{$margin-top} * 1);
         color: black;
-        
+       
         
     }
 
     .masthead__navigation__list {
         display: flex;
         color: black;
+        margin-inline-start: calc(#{$margin-inline-start} * 3);
     }
 
 
@@ -240,13 +241,6 @@ input[type=checkbox]:checked ~ .curtain {
   }
 
 
-//   .manage__bring__subtitle,
-//   .manage__bring__paragraph,
-//   .manage__bring__button {
-//       justify-content: start;
-//       text-align: start;
-//       margin-inline-start: calc(#{$margin-inline-start} * 2);
-//   }
 
 
   .manage__bring__conatiner {
@@ -261,5 +255,10 @@ input[type=checkbox]:checked ~ .curtain {
 
   .manage__bring__subtitle {
       font-size: 32px;
+  }
+
+  .image__close,
+  .image__open {
+      display: none;
   }
 }
