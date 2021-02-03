@@ -27,7 +27,7 @@
 
 .manage__what__image {
   position: absolute;
-  top: -12%;
+  top: 0%;
   left: 25%;
  
 }
@@ -36,6 +36,14 @@
     margin-top: 5rem
 }
 
+#slide-dot-1,
+#slide-dot-2,
+#slide-dot-3,
+#slide-dot-4 {
+    
+    position: absolute;
+    left: 50%;
+}
 
 
 
@@ -45,7 +53,7 @@
     text-align: center;
     justify-content: center;
     padding: $padding;
-    margin-top: calc(#{$margin-top} * 3);
+    margin-top: calc(#{$margin-top} * 4);
     margin-bottom: calc(#{$margin-bottom} * 3);
    width: 300px;
 }
