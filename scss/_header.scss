@@ -124,8 +124,13 @@
 }
 
 
-input[type=checkbox] ~ .image__open { display: none; }
-input[type=checkbox]:checked ~ .image__close { display: none; }
+// input[type=checkbox]:not(:checked) + .image__open { display: none; }
+// input[type=checkbox]:checked + .image__close { display: none; }
+
+
+input[type=checkbox]:not(:checked) ~ .button__open { 
+    background-image: url('../images/icon-hamburger.svg');
+ }
 
 
 
@@ -151,7 +156,7 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
 
 
 input[type=checkbox]:checked ~ .curtain {
-    .curtain {
+    
 	background-color: rgba(145, 148, 144, 0.5);
 	z-index: 1;
 	width: 100%;
@@ -161,7 +166,7 @@ input[type=checkbox]:checked ~ .curtain {
 	left: 0;
     right: 0;
     
-    }
+    
 
 }
 

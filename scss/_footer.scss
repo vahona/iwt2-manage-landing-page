@@ -120,13 +120,17 @@
   padding: $padding;
 }
 
+.footer__updates__indice {
+   margin-bottom: 0;
+}
+
 
 @media (min-width: 600px) {
     .footer__simplify  {
-         display: flex;
-         text-align: start;
-         justify-content: start;
-         justify-content: space-between;
+        display: flex;
+        text-align: start;
+        justify-content: start;
+        justify-content: space-between;
     }
 
 

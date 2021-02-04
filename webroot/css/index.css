@@ -6,6 +6,16 @@ body {
   margin-inline-start: auto;
   margin-inline-end: auto; }
 
+input[type=checkbox]:checked + body {
+  background-color: rgba(145, 148, 144, 0.5);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
 .manage-header {
   background-image: url("../images/bg-tablet-pattern.svg");
   background-size: 100%;
@@ -95,11 +105,8 @@ body {
   background-color: transparent;
   border: none; }
 
-input[type=checkbox] ~ .image__open {
-  display: none; }
-
-input[type=checkbox]:checked ~ .image__close {
-  display: none; }
+input[type=checkbox]:not(:checked) ~ .button__open {
+  background-image: url("../images/icon-hamburger.svg"); }
 
 .masthead__navigation__lists {
   margin: calc(1rem * 2); }
@@ -116,7 +123,7 @@ input[type=checkbox]:not(:checked) + .masthead__navigation {
   left: -300px;
   margin-inline-start: 1rem; }
 
-input[type=checkbox]:checked ~ .curtain .curtain {
+input[type=checkbox]:checked ~ .curtain {
   background-color: rgba(145, 148, 144, 0.5);
   z-index: 1;
   width: 100%;
@@ -281,6 +288,9 @@ input[type=checkbox]:checked ~ .curtain .curtain {
   background-repeat: no-repeat;
   padding: 1rem; }
 
+.footer__updates__indice {
+  margin-bottom: 0; }
+
 @media (min-width: 600px) {
   .footer__simplify {
     display: flex;
@@ -343,6 +353,10 @@ input[type=checkbox]:checked ~ .curtain .curtain {
 .manage__what__subcontainer {
   position: relative;
   margin-right: calc(1rem * 1); }
+
+.manage__what__bigtitle {
+  text-align: center;
+  margin-top: calc(1rem * 2); }
 
 .container__slide {
   overflow: hidden;
