@@ -147,9 +147,10 @@ input[type=checkbox]:checked ~ .curtain {
 
 .manage__bring__paragraph {
   font-family: Bahnschrift;
-  color: gray;
+  color: #b3b1b1;
   line-height: 32px;
-  font-size: 18px; }
+  font-size: 18px;
+  font-stretch: condensed; }
 
 .manage__bring__subtitle {
   font-size: 35px;

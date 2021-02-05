@@ -188,9 +188,10 @@ input[type=checkbox]:checked ~ .curtain {
 
     .manage__bring__paragraph {
        font-family: Bahnschrift;
-       color: gray;
+       color: rgb(179, 177, 177);
        line-height: 32px;
        font-size: 18px;
+       font-stretch: condensed;
     }
 
     .manage__bring__subtitle {
