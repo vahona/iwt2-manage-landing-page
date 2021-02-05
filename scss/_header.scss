@@ -13,6 +13,8 @@
     
   &__navigation {
       position: relative;
+      font-family: Arial;
+      
   }
 
   &__navigation__list {
@@ -25,12 +27,17 @@
 
   &__navigation__lists--anchore {
       text-decoration: $text-decoration;
+      color: black;
   }
 
   &__logo{
       margin-top: calc(#{$margin-top} * 2);
       margin-inline-start: calc(#{$margin-inline-start} * 2);
   }
+}
+
+.about {
+    width: 200px;
 }
 
 .manage__bring__image {
@@ -79,6 +86,7 @@
     background-color: #FF4500;
     border: none;
     border-radius: 30px;
+    font-family: Arial;
 }
 
 
@@ -178,7 +186,20 @@ input[type=checkbox]:checked ~ .curtain {
     margin-top: calc(#{$margin-top} * -23);
 }
 
+    .manage__bring__paragraph {
+       font-family: Bahnschrift;
+       color: gray;
+       line-height: 32px;
+       font-size: 18px;
+    }
 
+    .manage__bring__subtitle {
+      font-size: 35px;
+      font-family: Bahnschrift;
+      font-weight: 700;
+      line-height: 45px;
+      
+    }
 
 
 
@@ -258,9 +279,6 @@ input[type=checkbox]:checked ~ .curtain {
     
   }
 
-  .manage__bring__subtitle {
-      font-size: 32px;
-  }
 
   .image__close,
   .image__open {
