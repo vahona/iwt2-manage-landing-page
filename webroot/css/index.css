@@ -156,7 +156,8 @@ input[type=checkbox]:checked ~ .curtain {
   font-size: 35px;
   font-family: Bahnschrift;
   font-weight: 700;
-  line-height: 45px; }
+  line-height: 45px;
+  color: #030375; }
 
 @media (min-width: 800px) {
   .bar {
@@ -315,6 +316,9 @@ input[type=checkbox]:checked ~ .curtain {
     justify-content: start;
     justify-content: space-between; } }
 
+.manage__different {
+  font-family: Bahnschrift; }
+
 .manage__differents__smcontainer {
   display: flex;
   flex-direction: row;
@@ -353,6 +357,20 @@ input[type=checkbox]:checked ~ .curtain {
 .manage__differents {
   margin-inline-start: calc(1rem * 2);
   margin-inline-end: 1rem; }
+
+.manage__different__title {
+  font-size: 35px;
+  font-family: Bahnschrift;
+  font-weight: 700;
+  line-height: 45px;
+  color: #030375; }
+
+.manage__different__paragraph {
+  font-family: Bahnschrift;
+  color: #b3b1b1;
+  line-height: 32px;
+  font-size: 18px;
+  font-stretch: condensed; }
 
 @media (min-width: 800px) {
   .manage__different {

@@ -1,3 +1,8 @@
+.manage__different {
+       font-family: Bahnschrift;
+    
+}
+
 .manage__differents__smcontainer {
     display: flex;
     flex-direction: row;
@@ -47,6 +52,22 @@
 .manage__differents {
       margin-inline-start: calc(#{$margin-inline-start} * 2);
       margin-inline-end: $margin-inline-end;
+  }
+
+  .manage__different__title {
+        font-size: 35px;
+        font-family: Bahnschrift;
+        font-weight: 700;
+        line-height: 45px;
+        color:  rgb(3, 3, 117);
+  }
+
+  .manage__different__paragraph {
+       font-family: Bahnschrift;
+       color: rgb(179, 177, 177);
+       line-height: 32px;
+       font-size: 18px;
+       font-stretch: condensed;
   }
 
 
